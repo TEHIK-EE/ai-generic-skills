@@ -24,8 +24,8 @@ In Claude Code, run:
 This registers the marketplace so you can browse its plugins. Then install the ones you want (or use the following commands):
 
 ```text
-/plugin install tehik-dev-skills@TEHIK-EE/ai-generic-skills
-/plugin install tehik-task-board@TEHIK-EE/ai-generic-skills
+/plugin install tehik-dev-skills@tehik-dev-skills
+/plugin install tehik-task-board@tehik-dev-skills
 ```
 
 ### Manual Installation
@@ -52,7 +52,7 @@ Auto-update is disabled by default for third-party marketplaces. To enable it, o
 To update manually at any time:
 
 ```text
-/plugin marketplace update TEHIK-EE/ai-generic-skills
+/plugin marketplace update tehik-dev-skills
 ```
 
 Then run `/reload-plugins` to apply the changes.
