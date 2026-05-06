@@ -1,0 +1,15 @@
+{
+  "name": "tehik-task-board",
+  "version": "1.0.0",
+  "description": "Folder-based task board pipeline skills for turning business briefs into tasks, processing queues, running task workflows, and second-pass validation.",
+  "keywords": [
+    "task-board",
+    "business-brief-to-tasks",
+    "process-task-board",
+    "task-board-runner",
+    "validate-task-board",
+    "workflow",
+    "queue",
+    "automation"
+  ]
+}

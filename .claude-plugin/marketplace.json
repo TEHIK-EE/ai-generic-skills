@@ -1,0 +1,19 @@
+{
+  "name": "TEHIK Dev Skills",
+  "owner": {
+    "name": "TEHIK",
+    "email": "info@tehik.ee"
+  },
+  "plugins": [
+    {
+      "name": "tehik-dev-skills",
+      "source": "./plugins/tehik-dev-skills",
+      "description": "Core development lifecycle skills for implementing features, fixing bugs, refactoring, managing git, database migrations, dependencies, and codebase quality."
+    },
+    {
+      "name": "tehik-task-board",
+      "source": "./plugins/tehik-task-board",
+      "description": "Folder-based task board pipeline skills for turning business briefs into tasks, processing queues, running task workflows, and second-pass validation."
+    }
+  ]
+}

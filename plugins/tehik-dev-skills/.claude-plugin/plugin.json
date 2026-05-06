@@ -1,0 +1,23 @@
+{
+  "name": "tehik-dev-skills",
+  "version": "1.0.0",
+  "description": "Core development lifecycle skills for implementing features, fixing bugs, refactoring, managing git, database migrations, dependencies, and codebase quality.",
+  "keywords": [
+    "development",
+    "implement-feature",
+    "fix-bug",
+    "refactor",
+    "run-tests",
+    "conventional-commit",
+    "create-branch",
+    "create-migration",
+    "release",
+    "update-dependencies",
+    "update-docs",
+    "codebase-auditor",
+    "ai-slop-cleaner",
+    "analyze-codebase",
+    "init-project",
+    "validate-external-proposal"
+  ]
+}
