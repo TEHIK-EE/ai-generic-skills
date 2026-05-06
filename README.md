@@ -1,0 +1,1 @@
+# TEHIK AI Generic Skills
