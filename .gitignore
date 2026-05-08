@@ -1,0 +1,41 @@
+# macOS
+.DS_Store
+._*
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
+Icon?
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+.fuse_hidden*
+.nfs*
+
+# Editors / IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+*.swn
+*.iml
+.project
+.settings/
+.classpath
+
+# Claude Code per-developer settings
+# NOTE: .claude-plugin/ (marketplace + plugin manifests) is intentionally tracked.
+# Only the local-settings file under .claude/ is per-developer.
+.claude/settings.local.json
+
+# Logs / temp
+*.log
+*.tmp
+*.bak
