@@ -18,7 +18,7 @@
     {
       "name": "tehik-standards-validation",
       "source": "./plugins/tehik-standards-validation",
-      "description": "Validate a software project against TEHIK's published standards documents. Each skill splits its source document across parallel subagents to keep context manageable and produces a Markdown audit report with per-requirement verdicts and recommendations. Currently ships validate-tehik-nfr (non-functional requirements)."
+      "description": "Validate a software project against TEHIK's published standards documents. Each skill splits its source document across parallel subagents to keep context manageable and produces a Markdown audit report with per-requirement verdicts and recommendations."
     }
   ]
 }
