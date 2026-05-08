@@ -14,6 +14,11 @@
       "name": "tehik-task-board",
       "source": "./plugins/tehik-task-board",
       "description": "Folder-based task board pipeline skills for turning business briefs into tasks, processing queues, running task workflows, and second-pass validation."
+    },
+    {
+      "name": "tehik-standards-validation",
+      "source": "./plugins/tehik-standards-validation",
+      "description": "Validate a software project against TEHIK's published standards documents. Each skill splits its source document across parallel subagents to keep context manageable and produces a Markdown audit report with per-requirement verdicts and recommendations. Currently ships validate-tehik-nfr (non-functional requirements)."
     }
   ]
 }
