@@ -8,6 +8,8 @@
     "compliance",
     "audit",
     "validation",
-    "validate-tehik-nfr"
+    "validate-tehik-nfr",
+    "validate-tehik-it-profile",
+    "it-profile"
   ]
 }
