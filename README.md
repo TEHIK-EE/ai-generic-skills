@@ -4,10 +4,11 @@ A Claude Code Plugin Marketplace containing reusable AI skills for software deve
 
 ## Overview
 
-This repository provides two plugins for Claude Code:
+This repository provides three plugins for Claude Code:
 
 - **tehik-dev-skills** — Core development lifecycle skills: feature implementation, bug fixing, refactoring, commits, migrations, releases, dependency management, and codebase quality.
 - **tehik-task-board** — Folder-based task board skills for turning business briefs into atomic tasks, processing queues, and running validation workflows.
+- **tehik-standards-validation** — Validate a project against TEHIK's published standards (NFRs, IT Profile). Each skill fans out across parallel subagents to keep context manageable and produces a Markdown audit report.
 
 Skills are invoked automatically by Claude Code when your request matches a skill's trigger conditions, or explicitly via `/skill-name`.
 
@@ -26,6 +27,7 @@ This registers the marketplace so you can browse its plugins. Then install the o
 ```text
 /plugin install tehik-dev-skills@tehik-dev-skills
 /plugin install tehik-task-board@tehik-dev-skills
+/plugin install tehik-standards-validation@tehik-dev-skills
 ```
 
 ### Manual Installation
@@ -41,6 +43,7 @@ Then in Claude Code:
 ```text
 /plugin add ./plugins/tehik-dev-skills
 /plugin add ./plugins/tehik-task-board
+/plugin add ./plugins/tehik-standards-validation
 ```
 
 To install only one plugin, run only the corresponding `/plugin add` command.
@@ -87,3 +90,10 @@ Then run `/reload-plugins` to apply the changes.
 | `process-task-board` | Process a folder-based task queue — complete tasks and move them to the output folder with artifact directories. |
 | `task-board-runner` | Run folder-based task queues (`To-Do` → `To-Validate` → `Done`) with routing and second-pass validation. |
 | `validate-task-board` | Second-pass review: move `To-Validate` tasks to `Done` or back to `To-Do` with clarifying notes. |
+
+### tehik-standards-validation
+
+| Skill | Description |
+| --- | --- |
+| `validate-tehik-nfr` | Validate a project against TEHIK's non-functional requirements. Fans out NFR sections across parallel subagents and produces a per-requirement Markdown audit report. |
+| `validate-tehik-it-profile` | Validate a project's technology stack against the TEHIK IT Profile (preferred / acceptable / forbidden tech). Fans out per technology layer and produces a per-component Markdown audit report. |
