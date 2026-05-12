@@ -153,12 +153,18 @@ For sections 2 through 12 (NOT section 1):
 
 1. Read `references/subagent-brief.md`.
 2. Replace every `{{...}}` placeholder using the per-section data from
-   `manifest.json` and the project intel.
+   `manifest.json` and the project intel. Resolve `{{COMMON_RULES_PATH}}`
+   to the absolute path of
+   `${CLAUDE_PLUGIN_ROOT}/references/auditor-common.md` so the subagent
+   receives a concrete path it can `Read`.
 3. Spawn one Agent in the same message per section, all in parallel.
-   Use `subagent_type: general-purpose` unless a section is dominated by
-   code search, in which case `Explore` is fine. Each subagent must write
-   its findings to `<workdir>/findings/section-NN.md` so a partial run can
-   be resumed later.
+   Use `subagent_type: tehik-standards-validation:nfr-section-auditor` —
+   the agent is pinned to Sonnet and locked to read-only tools (Read,
+   Grep, Glob, Bash), so do not override the subagent type unless the
+   user explicitly asks for a different model or wider tool access.
+   Each subagent must write its findings to
+   `<workdir>/findings/section-NN.md` so a partial run can be resumed
+   later.
 4. Wait for all subagents to return.
 
 Why parallel: each subagent runs in its own context window, so the
