@@ -1,0 +1,15 @@
+{
+  "name": "tehik-standards-validation",
+  "version": "1.0.0",
+  "description": "Validate a software project against TEHIK's published standards documents. Each skill fetches its source document, splits it across parallel subagents to keep context manageable, and produces a Markdown audit report with per-requirement verdicts and recommendations.",
+  "keywords": [
+    "tehik",
+    "standards",
+    "compliance",
+    "audit",
+    "validation",
+    "validate-tehik-nfr",
+    "validate-tehik-it-profile",
+    "it-profile"
+  ]
+}
